@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="3">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="4"/>
+			<ChildItems>
+				<LabelDecoration name="Декорация2" id="10">
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<ContextMenu name="Декорация2КонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="12"/>
+				</LabelDecoration>
+				<UsualGroup name="Группа2" id="5">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="6"/>
+					<ChildItems>
+						<Button name="Мультимедиа" id="1">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.Мультимедиа</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<Picture>
+								<xr:Ref>CommonPicture.Мультимедиа</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<ExtendedTooltip name="МультимедиаРасширеннаяПодсказка" id="2"/>
+						</Button>
+						<LabelDecoration name="Декорация3" id="15">
+							<ContextMenu name="Декорация3КонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="17"/>
+						</LabelDecoration>
+						<Button name="РаботаСоШтрихкодами" id="50">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.РаботаСоШтрихкодами</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<Picture>
+								<xr:Ref>CommonPicture.ПросканироватьШтрихкод</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Штрихкода</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="РаботаСоШтрихкодамиРасширеннаяПодсказка" id="51"/>
+						</Button>
+						<LabelDecoration name="Декорация8" id="47">
+							<ContextMenu name="Декорация8КонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="49"/>
+						</LabelDecoration>
+						<Button name="Телефония" id="13">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.Телефония</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<Picture>
+								<xr:Ref>CommonPicture.Телефон</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ТелефонияРасширеннаяПодсказка" id="14"/>
+						</Button>
+						<LabelDecoration name="Декорация4" id="20">
+							<ContextMenu name="Декорация4КонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="22"/>
+						</LabelDecoration>
+						<Button name="РаботаСПочтой" id="18">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.РаботаСПочтой</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<Picture>
+								<xr:Ref>CommonPicture.РаботаСПочтой</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="РаботаСПочтойРасширеннаяПодсказка" id="19"/>
+						</Button>
+						<LabelDecoration name="Декорация7" id="35">
+							<ContextMenu name="Декорация7КонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="37"/>
+						</LabelDecoration>
+						<Button name="РаботаСКалендарем" id="38">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.РаботаСКалендарем</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<Picture>
+								<xr:Ref>CommonPicture.КалендарьОк</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Работа с
+календарем</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="РаботаСКалендаремРасширеннаяПодсказка" id="39"/>
+						</Button>
+						<LabelDecoration name="Декорация5" id="52">
+							<ContextMenu name="Декорация5КонтекстноеМеню" id="53"/>
+							<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="54"/>
+						</LabelDecoration>
+						<Button name="Геопозиционирование" id="57">
+							<Type>UsualButton</Type>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.Геопозиционирование</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<ExtendedTooltip name="ГеопозиционированиеРасширеннаяПодсказка" id="58"/>
+						</Button>
+						<LabelDecoration name="Декорация9" id="62">
+							<ContextMenu name="Декорация9КонтекстноеМеню" id="63"/>
+							<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="64"/>
+						</LabelDecoration>
+						<Button name="Уведомления" id="65">
+							<Type>UsualButton</Type>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.Уведомления</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<ExtendedTooltip name="УведомленияРасширеннаяПодсказка" id="66"/>
+						</Button>
+						<LabelDecoration name="Декорация10" id="67">
+							<ContextMenu name="Декорация10КонтекстноеМеню" id="68"/>
+							<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="69"/>
+						</LabelDecoration>
+						<Button name="НовоеВФормах" id="70">
+							<Type>UsualButton</Type>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.НовоеВФормах</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<ExtendedTooltip name="НовоеВФормахРасширеннаяПодсказка" id="71"/>
+						</Button>
+						<LabelDecoration name="Декорация6" id="59">
+							<ContextMenu name="Декорация6КонтекстноеМеню" id="60"/>
+							<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="61"/>
+						</LabelDecoration>
+						<Button name="Прочее" id="55">
+							<Type>UsualButton</Type>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.Прочее</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<ExtendedTooltip name="ПрочееРасширеннаяПодсказка" id="56"/>
+						</Button>
+						<LabelDecoration name="Декорация11" id="72">
+							<ContextMenu name="Декорация11КонтекстноеМеню" id="73"/>
+							<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="74"/>
+						</LabelDecoration>
+						<Button name="Подпись" id="75">
+							<Type>UsualButton</Type>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.Подпись</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<ExtendedTooltip name="ПодписьРасширеннаяПодсказка" id="76"/>
+						</Button>
+						<LabelDecoration name="Декорация12" id="79">
+							<ContextMenu name="Декорация12КонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="81"/>
+						</LabelDecoration>
+						<Button name="HTTPСервисы" id="77">
+							<Type>UsualButton</Type>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.HTTPСервисы</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<ExtendedTooltip name="HTTPСервисыРасширеннаяПодсказка" id="78"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="Декорация1" id="7">
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="9"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="Мультимедиа" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мультимедиа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мультимедиа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Мультимедиа</Action>
+		</Command>
+		<Command name="Телефония" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Телефония</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Телефония</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Телефония</Action>
+		</Command>
+		<Command name="РаботаСПочтой" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работа с почтой</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работа с почтой</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РаботаСПочтой</Action>
+		</Command>
+		<Command name="МобильныеУтилиты" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мобильные утилиты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мобильные утилиты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>МобильныеУтилиты</Action>
+		</Command>
+		<Command name="РаботаСКалендарем" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работа с календарем</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работа с календарем</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РаботаСКалендарем</Action>
+		</Command>
+		<Command name="РаботаСоШтрихкодами" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работа со штрихкодами</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работа со штрихкодами</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РаботаСоШтрихкодами</Action>
+		</Command>
+		<Command name="Прочее" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочее</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочее</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ДопВозможности</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Прочее</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="Геопозиционирование" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Геопозиционирование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Геопозиционирование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Геопозиционирование</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Геопозиционирование</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="Уведомления" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомления</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомления</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Уведомление</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Уведомления</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="НовоеВФормах" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новое в формах</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новое в формах</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.НовоеВФормах</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НовоеВФормах</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="Подпись" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подпись</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подпись</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Подпись</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Подпись</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="HTTPСервисы" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>HTTP сервисы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>HTTPСервисы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.HTTPСервисы</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>HTTPСервисы</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

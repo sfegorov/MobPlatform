@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Группа2" id="33">
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<Page name="Группа3" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Локальные</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<InputField name="Заголовок" id="12">
+							<DataPath>ЗаголовокСообщения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Заголовок</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ЗаголовокКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="ЗаголовокРасширеннаяПодсказка" id="14"/>
+						</InputField>
+						<InputField name="Текст" id="3">
+							<DataPath>Текст</DataPath>
+							<ContextMenu name="ТекстКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="ТекстРасширеннаяПодсказка" id="5"/>
+						</InputField>
+						<InputField name="Данные" id="18">
+							<DataPath>Данные</DataPath>
+							<ContextMenu name="ДанныеКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="ДанныеРасширеннаяПодсказка" id="20"/>
+						</InputField>
+						<InputField name="ИнтервалПовтора" id="9">
+							<DataPath>ИнтервалПовтора</DataPath>
+							<SpinButton>true</SpinButton>
+							<ContextMenu name="ИнтервалПовтораКонтекстноеМеню" id="10"/>
+							<ExtendedTooltip name="ИнтервалПовтораРасширеннаяПодсказка" id="11"/>
+						</InputField>
+						<InputField name="ДатаПоявленияУниверсальноеВремя" id="15">
+							<DataPath>ДатаПоявления</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата</v8:content>
+								</v8:item>
+							</Title>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ДатаПоявленияУниверсальноеВремяКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="ДатаПоявленияУниверсальноеВремяРасширеннаяПодсказка" id="17"/>
+						</InputField>
+						<UsualGroup name="Группа1" id="23">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="24"/>
+							<ChildItems>
+								<InputField name="Наклейка" id="6">
+									<DataPath>Наклейка</DataPath>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="НаклейкаКонтекстноеМеню" id="7"/>
+									<ExtendedTooltip name="НаклейкаРасширеннаяПодсказка" id="8"/>
+								</InputField>
+								<Button name="УстановитьНаклейку" id="21">
+									<Type>UsualButton</Type>
+									<Height>1</Height>
+									<CommandName>Form.Command.УстановитьНаклейку</CommandName>
+									<ExtendedTooltip name="УстановитьНаклейкуРасширеннаяПодсказка" id="22"/>
+								</Button>
+								<Button name="ПолучитьТекущуюНаклейку" id="25">
+									<Type>UsualButton</Type>
+									<Height>1</Height>
+									<CommandName>Form.Command.ПолучитьТекущуюНаклейку</CommandName>
+									<ExtendedTooltip name="ПолучитьТекущуюНаклейкуРасширеннаяПодсказка" id="26"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="ЛокальноеУведомление" id="1">
+							<Type>UsualButton</Type>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.ЛокальноеУведомление</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<ExtendedTooltip name="ЛокальноеУведомлениеРасширеннаяПодсказка" id="2"/>
+						</Button>
+						<Button name="ОтменитьВсеУведомления" id="27">
+							<Type>UsualButton</Type>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.ОтменитьВсеУведомления</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<ExtendedTooltip name="ОтменитьВсеУведомленияРасширеннаяПодсказка" id="28"/>
+						</Button>
+						<Button name="ПодключитьОбработчикУведомлений" id="31">
+							<Type>UsualButton</Type>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.ПодключитьОбработчикУведомлений</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<ExtendedTooltip name="ПодключитьОбработчикУведомленийРасширеннаяПодсказка" id="32"/>
+						</Button>
+						<Button name="ОтключитьОбработчикУведомлений" id="29">
+							<Type>UsualButton</Type>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.ОтключитьОбработчикУведомлений</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<ExtendedTooltip name="ОтключитьОбработчикУведомленийРасширеннаяПодсказка" id="30"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="Группа4" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Глобальные</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="38"/>
+					<ChildItems>
+						<InputField name="IDПроекта" id="39">
+							<DataPath>IDПроекта</DataPath>
+							<ContextMenu name="IDПроектаКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="IDПроектаРасширеннаяПодсказка" id="41"/>
+						</InputField>
+						<Button name="ПолучитьIDУстройства" id="45">
+							<Type>UsualButton</Type>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.ПолучитьIDУстройства</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<ExtendedTooltip name="ПолучитьIDУстройстваРасширеннаяПодсказка" id="46"/>
+						</Button>
+						<InputField name="IDУстройства" id="47">
+							<DataPath>IDУстройства</DataPath>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="IDУстройстваКонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="IDУстройстваРасширеннаяПодсказка" id="49"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="Группа5" id="50">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправка</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="51"/>
+					<ChildItems>
+						<InputField name="КлючСервера" id="42">
+							<DataPath>КлючСервера</DataPath>
+							<Height>2</Height>
+							<VerticalStretch>false</VerticalStretch>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="КлючСервераКонтекстноеМеню" id="43"/>
+							<ExtendedTooltip name="КлючСервераРасширеннаяПодсказка" id="44"/>
+						</InputField>
+						<InputField name="IDУстройства1" id="52">
+							<DataPath>IDУстройства</DataPath>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="IDУстройства1КонтекстноеМеню" id="53"/>
+							<ExtendedTooltip name="IDУстройства1РасширеннаяПодсказка" id="54"/>
+						</InputField>
+						<Button name="ОтправитьГлобальноеУведомление" id="55">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОтправитьГлобальноеУведомление</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отправить средствами 1С</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ОтправитьГлобальноеУведомлениеРасширеннаяПодсказка" id="56"/>
+						</Button>
+						<Button name="ОтправитьЧерезAPI" id="57">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОтправитьЧерезAPI</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отправить через API</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ОтправитьЧерезAPIРасширеннаяПодсказка" id="58"/>
+						</Button>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ЗаголовокСообщения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Текст" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Данные" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаПоявления" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата появления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИнтервалПовтора" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интервал повтора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Наклейка" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наклейка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="IDПроекта" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ID проекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КлючСервера" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ сервера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="IDУстройства" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ID устройства</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЛокальноеУведомление" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Локальное уведомление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Локальное уведомление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ДобавитьУведомление</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЛокальноеУведомление</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="УстановитьНаклейку" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить наклейку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить наклейку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.УстановитьНаклейку</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьНаклейку</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ПолучитьТекущуюНаклейку" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить текущую наклейку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить текущую наклейку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ПолучитьТекущуюНаклейку</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПолучитьТекущуюНаклейку</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ОтменитьВсеУведомления" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить все уведомления</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить все уведомления</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ОтменитьУведомление</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОтменитьВсеУведомления</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПодключитьОбработчикУведомлений" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключить обработчик уведомлений</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключить обработчик уведомлений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ПодключитьОбработчикУведомлений</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПодключитьОбработчикУведомлений</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОтключитьОбработчикУведомлений" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить обработчик уведомлений</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить обработчик уведомлений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ОтключитьОбработчикУведомлений</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОтключитьОбработчикУведомлений</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПолучитьIDУстройства" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить ID устройства</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить IDУстройства</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ПолучитьIDУстройства</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПолучитьIDУстройства</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОтправитьГлобальноеУведомление" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить глобальное уведомление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить глобальное уведомление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьГлобальноеУведомление</Action>
+		</Command>
+		<Command name="ОтправитьЧерезAPI" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить через API</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить через API</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьЧерезAPI</Action>
+		</Command>
+	</Commands>
+</Form>

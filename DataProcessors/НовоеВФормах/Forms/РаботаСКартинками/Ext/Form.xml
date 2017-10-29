@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаШаблон" id="24">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Шаблон</CommandName>
+				<ExtendedTooltip name="ФормаШаблонРасширеннаяПодсказка" id="25"/>
+			</Button>
+			<Button name="ФормаПросто" id="22">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Просто</CommandName>
+				<ExtendedTooltip name="ФормаПростоРасширеннаяПодсказка" id="23"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Группа1" id="26">
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="27"/>
+			<ChildItems>
+				<Page name="Группа5" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шаблоны</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="29"/>
+					<ChildItems>
+						<Pages name="Группа2" id="9">
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="10"/>
+							<ChildItems>
+								<Page name="Группа3" id="11">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Просто</v8:content>
+										</v8:item>
+									</Title>
+									<BackColor>#F9FFC5</BackColor>
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="12"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация2" id="6">
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<Zoomable>true</Zoomable>
+											<Picture>
+												<xr:Ref>CommonPicture.ПлюсОбычный</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="Декорация2КонтекстноеМеню" id="7"/>
+											<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="8"/>
+										</PictureDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="Группа4" id="13">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Шаблон</v8:content>
+										</v8:item>
+									</Title>
+									<BackColor>#F9FFC5</BackColor>
+									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="14"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация1" id="1">
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<TextColor>style:SpecialTextColor</TextColor>
+											<Zoomable>true</Zoomable>
+											<Picture>
+												<xr:Ref>CommonPicture.ПлюсКакАльфа</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="Декорация1КонтекстноеМеню" id="2"/>
+											<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="3"/>
+										</PictureDecoration>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+				<Page name="Размеры" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Размеры</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Размеры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="РазмерыРасширеннаяПодсказка" id="31"/>
+					<ChildItems>
+						<Pages name="Группа6" id="47">
+							<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="48"/>
+							<ChildItems>
+								<Page name="Группа7" id="49">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ldpi</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="50"/>
+									<ChildItems>
+										<PictureDecoration name="ldpi" id="32">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Ldpi</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.ldpi</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="ldpiКонтекстноеМеню" id="33"/>
+											<ExtendedTooltip name="ldpiРасширеннаяПодсказка" id="34"/>
+										</PictureDecoration>
+										<Button name="Команда1" id="59">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Command.Команда1</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.ldpi</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="Команда1РасширеннаяПодсказка" id="60"/>
+										</Button>
+									</ChildItems>
+								</Page>
+								<Page name="Группа8" id="51">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>mdpi</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="52"/>
+									<ChildItems>
+										<PictureDecoration name="mdpi" id="35">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Mdpi</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.mdpi</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="mdpiКонтекстноеМеню" id="36"/>
+											<ExtendedTooltip name="mdpiРасширеннаяПодсказка" id="37"/>
+										</PictureDecoration>
+										<Button name="Команда2" id="61">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Command.Команда1</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.mdpi</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="Команда2РасширеннаяПодсказка" id="62"/>
+										</Button>
+									</ChildItems>
+								</Page>
+								<Page name="Группа9" id="53">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>hdpi</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="54"/>
+									<ChildItems>
+										<PictureDecoration name="hdpi" id="38">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Hdpi</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.hdpi</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="hdpiКонтекстноеМеню" id="39"/>
+											<ExtendedTooltip name="hdpiРасширеннаяПодсказка" id="40"/>
+										</PictureDecoration>
+										<Button name="Команда3" id="63">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Command.Команда1</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.hdpi</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="Команда3РасширеннаяПодсказка" id="64"/>
+										</Button>
+									</ChildItems>
+								</Page>
+								<Page name="Группа10" id="55">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>xdpi</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="56"/>
+									<ChildItems>
+										<PictureDecoration name="xdpi" id="41">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Xdpi</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.xdpi</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="xdpiКонтекстноеМеню" id="42"/>
+											<ExtendedTooltip name="xdpiРасширеннаяПодсказка" id="43"/>
+										</PictureDecoration>
+										<Button name="Команда4" id="65">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Command.Команда1</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.xdpi</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="Команда4РасширеннаяПодсказка" id="66"/>
+										</Button>
+									</ChildItems>
+								</Page>
+								<Page name="Группа11" id="57">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Набор</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="58"/>
+									<ChildItems>
+										<PictureDecoration name="Набор" id="44">
+											<Width>12</Width>
+											<Height>4</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Набор</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.НаборФорматов</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="НаборКонтекстноеМеню" id="45"/>
+											<ExtendedTooltip name="НаборРасширеннаяПодсказка" id="46"/>
+										</PictureDecoration>
+										<Button name="Команда5" id="67">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Command.Команда1</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.НаборФорматов</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="Команда5РасширеннаяПодсказка" id="68"/>
+										</Button>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.НовоеВФормах</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Просто" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просто</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просто</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ПлюсОбычный</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+		</Command>
+		<Command name="Шаблон" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шаблон</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шаблон</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ПлюсКакАльфа</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+		</Command>
+		<Command name="Команда1" id="3"/>
+	</Commands>
+</Form>

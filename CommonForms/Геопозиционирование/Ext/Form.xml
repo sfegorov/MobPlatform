@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Группа1" id="29">
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<Page name="Группа2" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные действия</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="32"/>
+					<ChildItems>
+						<Button name="СписокПровайдеров" id="4">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.СписокПровайдеров</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<Picture>
+								<xr:Ref>CommonPicture.ПоискПровайдеров</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="СписокПровайдеровРасширеннаяПодсказка" id="5"/>
+						</Button>
+						<Button name="ПоказатьОпции" id="6">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.ПоказатьОпции</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<Picture>
+								<xr:Ref>CommonPicture.Провайдеры</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ПоказатьОпцииРасширеннаяПодсказка" id="7"/>
+						</Button>
+						<Button name="ПоказатьТекущиеКоординаты" id="8">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.ПоказатьТекущиеКоординаты</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<Picture>
+								<xr:Ref>CommonPicture.НайтиКоординаты</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ПоказатьТекущиеКоординатыРасширеннаяПодсказка" id="9"/>
+						</Button>
+						<Button name="ПоказатьНаКартеКоординаты" id="10">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.ПоказатьНаКартеКоординаты</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<Picture>
+								<xr:Ref>CommonPicture.ПоказатьКарту</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ПоказатьНаКартеКоординатыРасширеннаяПодсказка" id="11"/>
+						</Button>
+						<Button name="ОбновитьМестоположение" id="12">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.ОбновитьМестоположение</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<Picture>
+								<xr:Ref>CommonPicture.ОбновитьКоординаты</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ОбновитьМестоположениеРасширеннаяПодсказка" id="13"/>
+						</Button>
+						<Button name="СформироватьСписокКоординат" id="27">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.СформироватьСписокКоординат</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<Picture>
+								<xr:Ref>CommonPicture.ПоказатьСохраненныеКоординаты</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="СформироватьСписокКоординатРасширеннаяПодсказка" id="28"/>
+						</Button>
+						<Button name="ВключитьАвтоЗаписьКоординат" id="35">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.ВключитьАвтоЗаписьКоординат</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<Picture>
+								<xr:Ref>CommonPicture.ЗаписьКоординат</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ВключитьАвтоЗаписьКоординатРасширеннаяПодсказка" id="36"/>
+						</Button>
+						<Button name="ОтключитьАвтоЗаписьКоординат" id="37">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Enabled>false</Enabled>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.ОтключитьАвтоЗаписьКоординат</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<Picture>
+								<xr:Ref>CommonPicture.ОстановитьЗаписьКоординат</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ОтключитьАвтоЗаписьКоординатРасширеннаяПодсказка" id="38"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="Группа3" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список координат</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="34"/>
+					<ChildItems>
+						<Table name="Путь" id="14">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>Путь</DataPath>
+							<RowPictureDataPath>Путь.DefaultPicture</RowPictureDataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ПутьКонтекстноеМеню" id="15">
+								<ChildItems>
+									<Button name="ПутьПолучитьАдресПоКоординатам" id="58">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПолучитьАдресПоКоординатам</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Адр</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ПутьПолучитьАдресПоКоординатамРасширеннаяПодсказка" id="59"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ПутьКоманднаяПанель" id="16"/>
+							<ExtendedTooltip name="ПутьРасширеннаяПодсказка" id="17"/>
+							<SearchStringAddition name="ПутьСтрокаПоиска" id="49">
+								<AdditionSource>
+									<Item>Путь</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПутьСтрокаПоискаКонтекстноеМеню" id="50"/>
+								<ExtendedTooltip name="ПутьСтрокаПоискаРасширеннаяПодсказка" id="51"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПутьСостояниеПросмотра" id="52">
+								<AdditionSource>
+									<Item>Путь</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПутьСостояниеПросмотраКонтекстноеМеню" id="53"/>
+								<ExtendedTooltip name="ПутьСостояниеПросмотраРасширеннаяПодсказка" id="54"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПутьУправлениеПоиском" id="55">
+								<AdditionSource>
+									<Item>Путь</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПутьУправлениеПоискомКонтекстноеМеню" id="56"/>
+								<ExtendedTooltip name="ПутьУправлениеПоискомРасширеннаяПодсказка" id="57"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ПутьВыбор</Event>
+								<Event name="OnActivateRow">ПутьПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ПутьПериод" id="18">
+									<DataPath>Путь.Period</DataPath>
+									<ContextMenu name="ПутьПериодКонтекстноеМеню" id="19"/>
+									<ExtendedTooltip name="ПутьПериодРасширеннаяПодсказка" id="20"/>
+								</LabelField>
+								<LabelField name="ПутьШирота" id="21">
+									<DataPath>Путь.Широта</DataPath>
+									<ContextMenu name="ПутьШиротаКонтекстноеМеню" id="22"/>
+									<ExtendedTooltip name="ПутьШиротаРасширеннаяПодсказка" id="23"/>
+								</LabelField>
+								<LabelField name="ПутьДолгота" id="24">
+									<DataPath>Путь.Долгота</DataPath>
+									<ContextMenu name="ПутьДолготаКонтекстноеМеню" id="25"/>
+									<ExtendedTooltip name="ПутьДолготаРасширеннаяПодсказка" id="26"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Группа4" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДопВозможности</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<Button name="ОтобразитьКоординаты" id="41">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОтобразитьКоординаты</CommandName>
+							<ExtendedTooltip name="ОтобразитьКоординатыРасширеннаяПодсказка" id="42"/>
+						</Button>
+						<Button name="ОчисткаПройденногоПути" id="43">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОчисткаПройденногоПути</CommandName>
+							<ExtendedTooltip name="ОчисткаПройденногоПутиРасширеннаяПодсказка" id="44"/>
+						</Button>
+						<Button name="ПолучитьКоординатыПоАдресу" id="47">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПолучитьКоординатыПоАдресу</CommandName>
+							<ExtendedTooltip name="ПолучитьКоординатыПоАдресуРасширеннаяПодсказка" id="48"/>
+						</Button>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Путь" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.Координаты</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Период</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СписокПровайдеров" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список провайдеров</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список провайдеров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СписокПровайдеров</Action>
+		</Command>
+		<Command name="ПоказатьОпции" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать опции</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать опции</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьОпции</Action>
+		</Command>
+		<Command name="ПоказатьТекущиеКоординаты" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать текущие координаты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать текущие координаты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьТекущиеКоординаты</Action>
+		</Command>
+		<Command name="ПоказатьНаКартеКоординаты" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать на карте координаты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать на карте координаты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьНаКартеКоординаты</Action>
+		</Command>
+		<Command name="ОбновитьМестоположение" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить местоположение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить местоположение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьМестоположение</Action>
+		</Command>
+		<Command name="СформироватьСписокКоординат" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать список координат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать список координат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьСписокКоординат</Action>
+		</Command>
+		<Command name="ВключитьАвтоЗаписьКоординат" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить авто запись координат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить авто запись координат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВключитьАвтоЗаписьКоординат</Action>
+		</Command>
+		<Command name="ОтключитьАвтоЗаписьКоординат" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить авто запись координат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить авто запись координат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтключитьАвтоЗаписьКоординат</Action>
+		</Command>
+		<Command name="ОтобразитьКоординаты" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отобразить координаты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отобразить координаты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтобразитьКоординаты</Action>
+		</Command>
+		<Command name="ОчисткаПройденногоПути" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистка пройденного пути</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистка пройденного пути</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчисткаПройденногоПути</Action>
+		</Command>
+		<Command name="ПолучитьАдресПоКоординатам" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить адрес по координатам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить адрес по координатам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьАдресПоКоординатам</Action>
+		</Command>
+		<Command name="ПолучитьКоординатыПоАдресу" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить координаты по адресу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить координаты по адресу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьКоординатыПоАдресу</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,1075 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Группа1" id="28">
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<Page name="Группа8" id="86">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Учетки</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="87"/>
+					<ChildItems>
+						<UsualGroup name="Группа11" id="154">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="155"/>
+							<ChildItems>
+								<Button name="ПроверитьДоступныеУчетки" id="88">
+									<Type>UsualButton</Type>
+									<Height>1</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ПроверитьДоступныеУчетки</CommandName>
+									<Font bold="true" kind="AutoFont"/>
+									<ExtendedTooltip name="ПроверитьДоступныеУчеткиРасширеннаяПодсказка" id="89"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="УчетныеЗаписи" id="90">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>УчетныеЗаписи</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="УчетныеЗаписиКонтекстноеМеню" id="91"/>
+							<AutoCommandBar name="УчетныеЗаписиКоманднаяПанель" id="92">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="УчетныеЗаписиРасширеннаяПодсказка" id="93"/>
+							<SearchStringAddition name="УчетныеЗаписиСтрокаПоиска" id="94">
+								<AdditionSource>
+									<Item>УчетныеЗаписи</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="УчетныеЗаписиСтрокаПоискаКонтекстноеМеню" id="97"/>
+								<ExtendedTooltip name="УчетныеЗаписиСтрокаПоискаРасширеннаяПодсказка" id="98"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="УчетныеЗаписиСостояниеПросмотра" id="99">
+								<AdditionSource>
+									<Item>УчетныеЗаписи</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="УчетныеЗаписиСостояниеПросмотраКонтекстноеМеню" id="102"/>
+								<ExtendedTooltip name="УчетныеЗаписиСостояниеПросмотраРасширеннаяПодсказка" id="103"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="УчетныеЗаписиУправлениеПоиском" id="104">
+								<AdditionSource>
+									<Item>УчетныеЗаписи</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="УчетныеЗаписиУправлениеПоискомКонтекстноеМеню" id="107"/>
+								<ExtendedTooltip name="УчетныеЗаписиУправлениеПоискомРасширеннаяПодсказка" id="108"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="УчетныеЗаписиИдентификатор" id="112">
+									<DataPath>УчетныеЗаписи.Идентификатор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="УчетныеЗаписиИдентификаторКонтекстноеМеню" id="113"/>
+									<ExtendedTooltip name="УчетныеЗаписиИдентификаторРасширеннаяПодсказка" id="114"/>
+								</InputField>
+								<InputField name="УчетныеЗаписиИсточникУчетнойЗаписи" id="109">
+									<DataPath>УчетныеЗаписи.ИсточникУчетнойЗаписи</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="УчетныеЗаписиИсточникУчетнойЗаписиКонтекстноеМеню" id="110"/>
+									<ExtendedTooltip name="УчетныеЗаписиИсточникУчетнойЗаписиРасширеннаяПодсказка" id="111"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Группа2" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Просмотр</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="31"/>
+					<ChildItems>
+						<Button name="ПолучитьСписокКалендарей" id="1">
+							<Type>UsualButton</Type>
+							<DefaultButton>true</DefaultButton>
+							<Height>1</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Check>true</Check>
+							<CommandName>Form.Command.ПолучитьСписокКалендарей</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<ExtendedTooltip name="ПолучитьСписокКалендарейРасширеннаяПодсказка" id="2"/>
+						</Button>
+						<InputField name="ОсновнойКалендарь" id="44">
+							<DataPath>ОсновнойКалендарь</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Для устройств на базе Android - определяется не локальный календарь с наибольшим количеством записей. Если найдены календари с одинаковым количеством записей, используется календарь с наименьшим идентификатором. </v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ContextMenu name="ОсновнойКалендарьКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="ОсновнойКалендарьРасширеннаяПодсказка" id="46"/>
+						</InputField>
+						<Table name="ДревоКалендарей" id="3">
+							<Representation>Tree</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<Header>false</Header>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ДревоКалендарей</DataPath>
+							<ContextMenu name="ДревоКалендарейКонтекстноеМеню" id="4"/>
+							<AutoCommandBar name="ДревоКалендарейКоманднаяПанель" id="5"/>
+							<ExtendedTooltip name="ДревоКалендарейРасширеннаяПодсказка" id="6"/>
+							<SearchStringAddition name="ДревоКалендарейСтрокаПоиска" id="7">
+								<AdditionSource>
+									<Item>ДревоКалендарей</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДревоКалендарейСтрокаПоискаКонтекстноеМеню" id="10"/>
+								<ExtendedTooltip name="ДревоКалендарейСтрокаПоискаРасширеннаяПодсказка" id="11"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДревоКалендарейСостояниеПросмотра" id="12">
+								<AdditionSource>
+									<Item>ДревоКалендарей</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДревоКалендарейСостояниеПросмотраКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="ДревоКалендарейСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДревоКалендарейУправлениеПоиском" id="17">
+								<AdditionSource>
+									<Item>ДревоКалендарей</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДревоКалендарейУправлениеПоискомКонтекстноеМеню" id="20"/>
+								<ExtendedTooltip name="ДревоКалендарейУправлениеПоискомРасширеннаяПодсказка" id="21"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ДревоКалендарейНазвание" id="22">
+									<DataPath>ДревоКалендарей.Название</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДревоКалендарейНазваниеКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ДревоКалендарейНазваниеРасширеннаяПодсказка" id="24"/>
+								</InputField>
+								<InputField name="ДревоКалендарейЗначение" id="25">
+									<DataPath>ДревоКалендарей.Значение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДревоКалендарейЗначениеКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ДревоКалендарейЗначениеРасширеннаяПодсказка" id="27"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Группа3" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Анализ</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="33"/>
+					<ChildItems>
+						<InputField name="ВыбранныйКалендарь" id="34">
+							<DataPath>ВыбранныйКалендарь</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Календарь</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выберите календарь, который вы хотите проверить</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="ВыбранныйКалендарьКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ВыбранныйКалендарьРасширеннаяПодсказка" id="36"/>
+							<Events>
+								<Event name="StartChoice">ВыбранныйКалендарьНачалоВыбора</Event>
+								<Event name="StartListChoice">ВыбранныйКалендарьНачалоВыбораИзСписка</Event>
+								<Event name="ChoiceProcessing">ВыбранныйКалендарьОбработкаВыбора</Event>
+							</Events>
+						</InputField>
+						<Button name="ПроверитьВозможностьВзаимодействия" id="50">
+							<Type>UsualButton</Type>
+							<Height>1</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.ПроверитьВозможностьВзаимодействия</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проверить</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПроверитьВозможностьВзаимодействияРасширеннаяПодсказка" id="51"/>
+						</Button>
+						<InputField name="ПроверкаДоступаКИзменению" id="37">
+							<DataPath>ПроверкаДоступаКИзменению</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Взаимодействие</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проверка возможности редактирования событий в выбранном календаре. Если нельзя, то не будет возможности поставить те или иные события этому календарю.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>БЛ=Нет; БИ=Да</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="ПроверкаДоступаКИзменениюКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ПроверкаДоступаКИзменениюРасширеннаяПодсказка" id="39"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="Группа4" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>События</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="41"/>
+					<ChildItems>
+						<InputField name="ВыбранныйКалендарь1" id="47">
+							<DataPath>ВыбранныйКалендарь</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Календарь</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Календарь для проверки событий</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="ВыбранныйКалендарь1КонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="ВыбранныйКалендарь1РасширеннаяПодсказка" id="49"/>
+							<Events>
+								<Event name="StartChoice">ВыбранныйКалендарьНачалоВыбора</Event>
+								<Event name="StartListChoice">ВыбранныйКалендарьНачалоВыбораИзСписка</Event>
+								<Event name="ChoiceProcessing">ВыбранныйКалендарьОбработкаВыбора</Event>
+							</Events>
+						</InputField>
+						<Pages name="Группа5" id="80">
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="81"/>
+							<ChildItems>
+								<Page name="Группа6" id="82">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Просмотр</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="83"/>
+									<ChildItems>
+										<Button name="ПолучитьСобытияКалендаря" id="42">
+											<Type>UsualButton</Type>
+											<Height>1</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<CommandName>Form.Command.ПолучитьСобытияКалендаря</CommandName>
+											<Font bold="true" kind="AutoFont"/>
+											<ExtendedTooltip name="ПолучитьСобытияКалендаряРасширеннаяПодсказка" id="43"/>
+										</Button>
+										<InputField name="КоличествоСобытийКалендаря" id="52">
+											<DataPath>КоличествоСобытийКалендаря</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Кол. событий</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="КоличествоСобытийКалендаряКонтекстноеМеню" id="53"/>
+											<ExtendedTooltip name="КоличествоСобытийКалендаряРасширеннаяПодсказка" id="54"/>
+										</InputField>
+										<Table name="ДревоСобытий" id="55">
+											<Representation>Tree</Representation>
+											<Header>false</Header>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>ДревоСобытий</DataPath>
+											<ContextMenu name="ДревоСобытийКонтекстноеМеню" id="56"/>
+											<AutoCommandBar name="ДревоСобытийКоманднаяПанель" id="57">
+												<Autofill>false</Autofill>
+											</AutoCommandBar>
+											<ExtendedTooltip name="ДревоСобытийРасширеннаяПодсказка" id="58"/>
+											<SearchStringAddition name="ДревоСобытийСтрокаПоиска" id="59">
+												<AdditionSource>
+													<Item>ДревоСобытий</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ДревоСобытийСтрокаПоискаКонтекстноеМеню" id="62"/>
+												<ExtendedTooltip name="ДревоСобытийСтрокаПоискаРасширеннаяПодсказка" id="63"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ДревоСобытийСостояниеПросмотра" id="64">
+												<AdditionSource>
+													<Item>ДревоСобытий</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ДревоСобытийСостояниеПросмотраКонтекстноеМеню" id="67"/>
+												<ExtendedTooltip name="ДревоСобытийСостояниеПросмотраРасширеннаяПодсказка" id="68"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ДревоСобытийУправлениеПоиском" id="69">
+												<AdditionSource>
+													<Item>ДревоСобытий</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ДревоСобытийУправлениеПоискомКонтекстноеМеню" id="72"/>
+												<ExtendedTooltip name="ДревоСобытийУправлениеПоискомРасширеннаяПодсказка" id="73"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<InputField name="ДревоСобытийНазвание" id="74">
+													<DataPath>ДревоСобытий.Название</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ДревоСобытийНазваниеКонтекстноеМеню" id="75"/>
+													<ExtendedTooltip name="ДревоСобытийНазваниеРасширеннаяПодсказка" id="76"/>
+												</InputField>
+												<InputField name="ДревоСобытийЗначение" id="77">
+													<DataPath>ДревоСобытий.Значение</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ДревоСобытийЗначениеКонтекстноеМеню" id="78"/>
+													<ExtendedTooltip name="ДревоСобытийЗначениеРасширеннаяПодсказка" id="79"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="Группа7" id="84">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Новое</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="85"/>
+									<ChildItems>
+										<UsualGroup name="Группа9" id="123">
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="124"/>
+											<ChildItems>
+												<InputField name="НачалоСобытия" id="117">
+													<DataPath>НачалоСобытия</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>С</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="НачалоСобытияКонтекстноеМеню" id="118"/>
+													<ExtendedTooltip name="НачалоСобытияРасширеннаяПодсказка" id="119"/>
+												</InputField>
+												<InputField name="КонецСобытия" id="120">
+													<DataPath>КонецСобытия</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>по</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="КонецСобытияКонтекстноеМеню" id="121"/>
+													<ExtendedTooltip name="КонецСобытияРасширеннаяПодсказка" id="122"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="СбТема" id="145">
+											<DataPath>СбТема</DataPath>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Тема данного события. Она же - заголовок</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<BackColor>#E7FFF0</BackColor>
+											<Font bold="true" kind="AutoFont"/>
+											<ContextMenu name="СбТемаКонтекстноеМеню" id="146"/>
+											<ExtendedTooltip name="СбТемаРасширеннаяПодсказка" id="147"/>
+										</InputField>
+										<InputField name="СбОписание" id="139">
+											<DataPath>СбОписание</DataPath>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Описание текущего события</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<MultiLine>true</MultiLine>
+											<ContextMenu name="СбОписаниеКонтекстноеМеню" id="140"/>
+											<ExtendedTooltip name="СбОписаниеРасширеннаяПодсказка" id="141"/>
+										</InputField>
+										<InputField name="СбУчастники" id="148">
+											<DataPath>СбУчастники</DataPath>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Укажите имена (или эмэйл) участников событий. Можно указать несколько имен - разделяя их запятой.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<MultiLine>true</MultiLine>
+											<ContextMenu name="СбУчастникиКонтекстноеМеню" id="149"/>
+											<ExtendedTooltip name="СбУчастникиРасширеннаяПодсказка" id="150"/>
+										</InputField>
+										<CheckBoxField name="СбВесьДень" id="125">
+											<DataPath>СбВесьДень</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>На весь день</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Будет ли текущее событие растянуто на весь день? Если да, то часы и минуты будут проигнорированны.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СбВесьДеньКонтекстноеМеню" id="126"/>
+											<ExtendedTooltip name="СбВесьДеньРасширеннаяПодсказка" id="127"/>
+										</CheckBoxField>
+										<InputField name="СбМесто" id="128">
+											<DataPath>СбМесто</DataPath>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Укажите место, где должно произойти данное событие</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<ContextMenu name="СбМестоКонтекстноеМеню" id="129"/>
+											<ExtendedTooltip name="СбМестоРасширеннаяПодсказка" id="130"/>
+										</InputField>
+										<UsualGroup name="Группа10" id="134">
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="135"/>
+											<ChildItems>
+												<InputField name="СбНапоминание" id="131">
+													<DataPath>СбНапоминание</DataPath>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>За сколько минут необходимо напомнить о текущем событии?</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ToolTipRepresentation>Button</ToolTipRepresentation>
+													<ContextMenu name="СбНапоминаниеКонтекстноеМеню" id="132"/>
+													<ExtendedTooltip name="СбНапоминаниеРасширеннаяПодсказка" id="133"/>
+													<Events>
+														<Event name="OnChange">СбНапоминаниеПриИзменении</Event>
+													</Events>
+												</InputField>
+												<LabelDecoration name="ДекорацияНапоминания" id="136">
+													<ContextMenu name="ДекорацияНапоминанияКонтекстноеМеню" id="137"/>
+													<ExtendedTooltip name="ДекорацияНапоминанияРасширеннаяПодсказка" id="138"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="СбПовторение" id="151">
+											<DataPath>СбПовторение</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Повторять</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Укажите с какой периодичностью повторять данное событие.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Однократно</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">ОдинРаз</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Каждый день</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">КаждыйДень</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Каждую неделю</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">КаждуюНеделю</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Каждый месяц</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">КаждыйМесяц</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Каждый год</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">КаждыйГод</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="СбПовторениеКонтекстноеМеню" id="152"/>
+											<ExtendedTooltip name="СбПовторениеРасширеннаяПодсказка" id="153"/>
+										</InputField>
+										<InputField name="СбОрганизатор" id="142">
+											<DataPath>СбОрганизатор</DataPath>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Организатор события. Например, директор фирмы, некий клиент или вы.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<ContextMenu name="СбОрганизаторКонтекстноеМеню" id="143"/>
+											<ExtendedTooltip name="СбОрганизаторРасширеннаяПодсказка" id="144"/>
+										</InputField>
+										<Button name="ДобавитьСобытие" id="115">
+											<Type>UsualButton</Type>
+											<Width>20</Width>
+											<Height>2</Height>
+											<CommandName>Form.Command.ДобавитьСобытие</CommandName>
+											<Font bold="true" kind="AutoFont"/>
+											<ExtendedTooltip name="ДобавитьСобытиеРасширеннаяПодсказка" id="116"/>
+										</Button>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ДревоКалендарей" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Древо календарей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Название" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Название</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Значение" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ВыбранныйКалендарь" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбранный календарь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверкаДоступаКИзменению" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка доступа к изменению</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОсновнойКалендарь" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основной календарь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоСобытийКалендаря" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество событий календаря</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДревоСобытий" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Древо событий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Название" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Название</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Значение" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="УчетныеЗаписи" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учетные записи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИсточникУчетнойЗаписи" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источник учетной записи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Идентификатор" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="НачалоСобытия" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начало события</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КонецСобытия" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конец события</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СбВесьДень" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сб весь день</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СбМесто" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Место события</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СбНапоминание" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Напомнить</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СбОписание" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СбОрганизатор" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организатор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СбТема" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тема</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СбУчастники" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Участники</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СбПовторение" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сб повторение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:use>false</dcsset:use>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДревоКалендарей</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДревоКалендарей.Название</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string"/>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:FieldBackColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ПолучитьСписокКалендарей" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить список календарей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить список календарей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьСписокКалендарей</Action>
+		</Command>
+		<Command name="ПолучитьСобытияКалендаря" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить события календаря</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить события календаря</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьСобытияКалендаря</Action>
+		</Command>
+		<Command name="ПроверитьВозможностьВзаимодействия" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить возможность взаимодействия</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить возможность взаимодействия</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьВозможностьВзаимодействия</Action>
+		</Command>
+		<Command name="ПроверитьДоступныеУчетки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить доступные учетки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить доступные учетки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьДоступныеУчетки</Action>
+		</Command>
+		<Command name="ДобавитьСобытие" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить событие</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить событие</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьСобытие</Action>
+		</Command>
+		<Command name="ОткрытьКалендарь" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть календарь</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть календарь</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьКалендарь</Action>
+		</Command>
+	</Commands>
+</Form>

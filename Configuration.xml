@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Configuration uuid="b2ae62f2-ee43-47a6-9db8-d564c3d8ba0d">
+		<InternalInfo>
+			<xr:ContainedObject>
+				<xr:ClassId>9cd510cd-abfc-11d4-9434-004095e12fc7</xr:ClassId>
+				<xr:ObjectId>9b08c58e-55d1-4b7e-b626-80f6fb2e1f5c</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>9fcd25a0-4822-11d4-9414-008048da11f9</xr:ClassId>
+				<xr:ObjectId>7d9fdae0-aa9c-4068-952b-800b86e4160c</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>e3687481-0a87-462c-a166-9f34594f9bba</xr:ClassId>
+				<xr:ObjectId>981305d9-95ae-4bb5-9d33-138172e78f68</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>9de14907-ec23-4a07-96f0-85521cb6b53b</xr:ClassId>
+				<xr:ObjectId>bae442e3-2013-463a-b5f5-28a02bffe225</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>51f2d5d8-ea4d-4064-8892-82951750031e</xr:ClassId>
+				<xr:ObjectId>af4f6a8a-534a-4322-aa46-ffff058f7aec</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>e68182ea-4237-4383-967f-90c1e3370bc7</xr:ClassId>
+				<xr:ObjectId>dc55e0e2-3c5c-43e9-9119-97bbbdea15ec</xr:ObjectId>
+			</xr:ContainedObject>
+		</InternalInfo>
+		<Properties>
+			<Name>ТестированиеВозможностей</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тестирование возможностей</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>1.0.2</Comment>
+			<NamePrefix/>
+			<ConfigurationExtensionCompatibilityMode>Version8_3_10</ConfigurationExtensionCompatibilityMode>
+			<DefaultRunMode>ManagedApplication</DefaultRunMode>
+			<UsePurposes>
+				<v8:Value xsi:type="app:ApplicationUsePurpose">PersonalComputer</v8:Value>
+				<v8:Value xsi:type="app:ApplicationUsePurpose">MobileDevice</v8:Value>
+			</UsePurposes>
+			<ScriptVariant>Russian</ScriptVariant>
+			<DefaultRoles/>
+			<Vendor>DitriX</Vendor>
+			<Version>1.0.2</Version>
+			<UpdateCatalogAddress/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
+			<UseOrdinaryFormInManagedApplication>false</UseOrdinaryFormInManagedApplication>
+			<AdditionalFullTextSearchDictionaries/>
+			<CommonSettingsStorage/>
+			<ReportsUserSettingsStorage/>
+			<ReportsVariantsStorage/>
+			<FormDataSettingsStorage/>
+			<DynamicListsUserSettingsStorage/>
+			<Content/>
+			<DefaultReportForm/>
+			<DefaultReportVariantForm/>
+			<DefaultReportSettingsForm/>
+			<DefaultDynamicListSettingsForm/>
+			<DefaultSearchForm/>
+			<RequiredMobileApplicationPermissions>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Multimedia</v8:Key>
+					<v8:Value xsi:type="xs:boolean">true</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Location</v8:Key>
+					<v8:Value xsi:type="xs:boolean">true</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Contacts</v8:Key>
+					<v8:Value xsi:type="xs:boolean">true</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Calendars</v8:Key>
+					<v8:Value xsi:type="xs:boolean">true</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Telephony</v8:Key>
+					<v8:Value xsi:type="xs:boolean">true</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">PushNotification</v8:Key>
+					<v8:Value xsi:type="xs:boolean">true</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">LocalNotification</v8:Key>
+					<v8:Value xsi:type="xs:boolean">true</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Print</v8:Key>
+					<v8:Value xsi:type="xs:boolean">true</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">InAppPurchases</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Ads</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+			</RequiredMobileApplicationPermissions>
+			<MainClientApplicationWindowMode>Normal</MainClientApplicationWindowMode>
+			<DefaultInterface/>
+			<DefaultStyle/>
+			<DefaultLanguage>Language.Русский</DefaultLanguage>
+			<BriefInformation/>
+			<DetailedInformation/>
+			<Copyright>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>DitriX</v8:content>
+				</v8:item>
+			</Copyright>
+			<VendorInformationAddress/>
+			<ConfigurationInformationAddress/>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<ObjectAutonumerationMode>NotAutoFree</ObjectAutonumerationMode>
+			<ModalityUseMode>Use</ModalityUseMode>
+			<SynchronousPlatformExtensionAndAddInCallUseMode>Use</SynchronousPlatformExtensionAndAddInCallUseMode>
+			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode>
+			<CompatibilityMode>Version8_3_7</CompatibilityMode>
+			<DefaultConstantsForm/>
+		</Properties>
+		<ChildObjects>
+			<Language>Русский</Language>
+			<CommonPicture>Мультимедиа</CommonPicture>
+			<CommonPicture>ПросканироватьШтрихкод</CommonPicture>
+			<CommonPicture>СделатьАудиоЗапись</CommonPicture>
+			<CommonPicture>СделатьВидеоЗапись</CommonPicture>
+			<CommonPicture>СделатьФото</CommonPicture>
+			<CommonPicture>Телефон</CommonPicture>
+			<CommonPicture>НайтиКонтакт</CommonPicture>
+			<CommonPicture>ПоказатьВсеКонтакты</CommonPicture>
+			<CommonPicture>Развернуть</CommonPicture>
+			<CommonPicture>Свернуть</CommonPicture>
+			<CommonPicture>ВходящийВызов</CommonPicture>
+			<CommonPicture>ИсходящийВызов</CommonPicture>
+			<CommonPicture>ПропущенныйВызов</CommonPicture>
+			<CommonPicture>ВсеВидыЗвонков</CommonPicture>
+			<CommonPicture>ВсеУчетки</CommonPicture>
+			<CommonPicture>ДобавитьКонтакт</CommonPicture>
+			<CommonPicture>ОтправитьСМС</CommonPicture>
+			<CommonPicture>ОбрабткаПолученияСМС</CommonPicture>
+			<CommonPicture>ОтключениеОбработкиПолученияСМС</CommonPicture>
+			<CommonPicture>Позвонить</CommonPicture>
+			<CommonPicture>МобильныеУтилиты</CommonPicture>
+			<CommonPicture>РаботаСПочтой</CommonPicture>
+			<CommonPicture>ОтправитьПисьмо</CommonPicture>
+			<CommonPicture>КалендарьОк</CommonPicture>
+			<CommonPicture>Журнал</CommonPicture>
+			<CommonPicture>ДопВозможности</CommonPicture>
+			<CommonPicture>ОчиститьБазуДанных</CommonPicture>
+			<CommonPicture>ФоновоеЗадание</CommonPicture>
+			<CommonPicture>НайтиФоновоеЗадание</CommonPicture>
+			<CommonPicture>ОтключитьФоновоеЗадание</CommonPicture>
+			<CommonPicture>КоллекцияПиктограммФайлов</CommonPicture>
+			<CommonPicture>ИзменитьРазмер</CommonPicture>
+			<CommonPicture>СозданиеШтрихкода</CommonPicture>
+			<CommonPicture>Геопозиционирование</CommonPicture>
+			<CommonPicture>Провайдеры</CommonPicture>
+			<CommonPicture>ПоискПровайдеров</CommonPicture>
+			<CommonPicture>НайтиКоординаты</CommonPicture>
+			<CommonPicture>ПоказатьКарту</CommonPicture>
+			<CommonPicture>ОбновитьКоординаты</CommonPicture>
+			<CommonPicture>ПоказатьСохраненныеКоординаты</CommonPicture>
+			<CommonPicture>ЗаписьКоординат</CommonPicture>
+			<CommonPicture>ОстановитьЗаписьКоординат</CommonPicture>
+			<CommonPicture>Уведомление</CommonPicture>
+			<CommonPicture>УстановитьНаклейку</CommonPicture>
+			<CommonPicture>УбратьНаклейку</CommonPicture>
+			<CommonPicture>ПолучитьТекущуюНаклейку</CommonPicture>
+			<CommonPicture>ДобавитьУведомление</CommonPicture>
+			<CommonPicture>ОтменитьУведомление</CommonPicture>
+			<CommonPicture>ПодключитьОбработчикУведомлений</CommonPicture>
+			<CommonPicture>ОтключитьОбработчикУведомлений</CommonPicture>
+			<CommonPicture>ПолучитьIDУстройства</CommonPicture>
+			<CommonPicture>НовоеВФормах</CommonPicture>
+			<CommonPicture>ТестАрхивныхКартинок</CommonPicture>
+			<CommonPicture>ПлюсОбычный</CommonPicture>
+			<CommonPicture>ПлюсКакАльфа</CommonPicture>
+			<CommonPicture>ldpi</CommonPicture>
+			<CommonPicture>mdpi</CommonPicture>
+			<CommonPicture>hdpi</CommonPicture>
+			<CommonPicture>xdpi</CommonPicture>
+			<CommonPicture>НаборФорматов</CommonPicture>
+			<CommonPicture>Подпись</CommonPicture>
+			<CommonPicture>HTTPСервисы</CommonPicture>
+			<Role>РольПолныйДоступКДокументу</Role>
+			<Role>РольБезДоступаКДокументу</Role>
+			<Role>РольСОграничениемДоступаКДокументу</Role>
+			<Role>ПолныеПрава</Role>
+			<CommonModule>СервисныйМодуль</CommonModule>
+			<CommonModule>ПреобразованиеMXL_В_HTML</CommonModule>
+			<CommonModule>МодульФоновыхЗаданий</CommonModule>
+			<CommonModule>ОбщиеФункции</CommonModule>
+			<HTTPService>DT</HTTPService>
+			<HTTPService>Sign</HTTPService>
+			<HTTPService>WebSearch</HTTPService>
+			<Constant>МобильнаяОС</Constant>
+			<CommonForm>Форма</CommonForm>
+			<CommonForm>Мультимедиа</CommonForm>
+			<CommonForm>Телефония</CommonForm>
+			<CommonForm>РаботаСПочтой</CommonForm>
+			<CommonForm>РаботаСКалендарем</CommonForm>
+			<CommonForm>ДополнительныеВозможности</CommonForm>
+			<CommonForm>ФормаПечати</CommonForm>
+			<CommonForm>ВыбратьФайл</CommonForm>
+			<CommonForm>РаботаСоСканеромШтрихкодов</CommonForm>
+			<CommonForm>Геопозиционирование</CommonForm>
+			<CommonForm>Уведомления</CommonForm>
+			<CommonForm>НовоеВЭлементахУправления</CommonForm>
+			<CommonForm>httpСервисы</CommonForm>
+			<Catalog>Пользователи</Catalog>
+			<Catalog>ТестированиеИнтентов</Catalog>
+			<Document>ПоступлениеТоваров</Document>
+			<Enum>СоставКонтактов</Enum>
+			<Enum>ТипХранимыхДанных</Enum>
+			<Enum>ТипAndroid</Enum>
+			<Enum>МобильныеОС</Enum>
+			<DataProcessor>ОбработкаКонтактов</DataProcessor>
+			<DataProcessor>СделатьПодпись</DataProcessor>
+			<DataProcessor>НовоеВФормах</DataProcessor>
+			<InformationRegister>ЖурналРезультатов</InformationRegister>
+			<InformationRegister>ДанныеМультимедиа</InformationRegister>
+			<InformationRegister>Координаты</InformationRegister>
+		</ChildObjects>
+	</Configuration>
+</MetaDataObject>

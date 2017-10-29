@@ -1,0 +1,830 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="9">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="10"/>
+			<ChildItems>
+				<InputField name="ПутьДляСохраненияФайлов" id="71">
+					<DataPath>ПутьДляСохраненияФайлов</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ChoiceButton>true</ChoiceButton>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь для временных файлов</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ПутьДляСохраненияФайловКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="ПутьДляСохраненияФайловРасширеннаяПодсказка" id="73"/>
+					<Events>
+						<Event name="StartChoice">ПутьДляСохраненияФайловНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="ОткрыватьРезультат" id="104">
+					<DataPath>ОткрыватьРезультат</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Открывать</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Открывать результат сразу, иначе - записывать данные в регистр</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОткрыватьРезультатКонтекстноеМеню" id="105"/>
+					<ExtendedTooltip name="ОткрыватьРезультатРасширеннаяПодсказка" id="106"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="СтраницыФункций" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы функций</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы функций</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыФункцийРасширеннаяПодсказка" id="50"/>
+			<ChildItems>
+				<Page name="ОсновныеФункции" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Функции 1С</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные функции</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ОсновныеФункцииРасширеннаяПодсказка" id="52"/>
+					<ChildItems>
+						<UsualGroup name="Группа2" id="11">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="12"/>
+							<ChildItems>
+								<UsualGroup name="Группа4" id="42">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Работа с камерой</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="43"/>
+									<ChildItems>
+										<InputField name="Камера" id="39">
+											<DataPath>Камера</DataPath>
+											<TextEdit>false</TextEdit>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Передняя</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Передняя</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Задняя</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Задняя</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="КамераКонтекстноеМеню" id="40"/>
+											<ExtendedTooltip name="КамераРасширеннаяПодсказка" id="41"/>
+											<Events>
+												<Event name="OnChange">КамераПриИзменении</Event>
+											</Events>
+										</InputField>
+										<UsualGroup name="Группа3" id="37">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Создание фото</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Representation>StrongSeparation</Representation>
+											<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="38"/>
+											<ChildItems>
+												<InputField name="РазрешениеФото" id="28">
+													<DataPath>РазрешениеФото</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<ListChoiceMode>true</ListChoiceMode>
+													<AutoMarkIncomplete>true</AutoMarkIncomplete>
+													<TextEdit>false</TextEdit>
+													<InputHint>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Разрешение фото</v8:content>
+														</v8:item>
+													</InputHint>
+													<ContextMenu name="РазрешениеФотоКонтекстноеМеню" id="29"/>
+													<ExtendedTooltip name="РазрешениеФотоРасширеннаяПодсказка" id="30"/>
+													<Events>
+														<Event name="ChoiceProcessing">РазрешениеФотоОбработкаВыбора</Event>
+													</Events>
+												</InputField>
+												<TrackBarField name="Качество" id="34">
+													<DataPath>Качество</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Качество 100%</v8:content>
+														</v8:item>
+													</Title>
+													<Height>1</Height>
+													<MinValue>1</MinValue>
+													<MarkingAppearance>BothSides</MarkingAppearance>
+													<ContextMenu name="КачествоКонтекстноеМеню" id="35"/>
+													<ExtendedTooltip name="КачествоРасширеннаяПодсказка" id="36"/>
+													<Events>
+														<Event name="OnChange">КачествоПриИзменении</Event>
+													</Events>
+												</TrackBarField>
+												<CheckBoxField name="Монохромное" id="31">
+													<DataPath>Монохромное</DataPath>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="МонохромноеКонтекстноеМеню" id="32"/>
+													<ExtendedTooltip name="МонохромноеРасширеннаяПодсказка" id="33"/>
+												</CheckBoxField>
+												<Button name="СделатьФото" id="7">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<Height>2</Height>
+													<CommandName>Form.Command.СделатьФото</CommandName>
+													<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+													<Picture>
+														<xr:Ref>CommonPicture.СделатьФото</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ExtendedTooltip name="СделатьФотоРасширеннаяПодсказка" id="8"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<LabelDecoration name="Декорация3" id="19">
+											<ContextMenu name="Декорация3КонтекстноеМеню" id="20"/>
+											<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="21"/>
+										</LabelDecoration>
+										<UsualGroup name="Группа5" id="47">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Создание видео</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="48"/>
+											<ChildItems>
+												<InputField name="КачествоВидео" id="44">
+													<DataPath>КачествоВидео</DataPath>
+													<TextEdit>false</TextEdit>
+													<ContextMenu name="КачествоВидеоКонтекстноеМеню" id="45"/>
+													<ExtendedTooltip name="КачествоВидеоРасширеннаяПодсказка" id="46"/>
+												</InputField>
+												<Button name="СделатьВидео" id="5">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<Height>2</Height>
+													<CommandName>Form.Command.СделатьВидео</CommandName>
+													<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+													<Picture>
+														<xr:Ref>CommonPicture.СделатьВидеоЗапись</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ExtendedTooltip name="СделатьВидеоРасширеннаяПодсказка" id="6"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<LabelDecoration name="Декорация4" id="22">
+									<ContextMenu name="Декорация4КонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="24"/>
+								</LabelDecoration>
+								<Button name="СделатьАудио" id="3">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<Height>2</Height>
+									<CommandName>Form.Command.СделатьАудио</CommandName>
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Picture>
+										<xr:Ref>CommonPicture.СделатьАудиоЗапись</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Аудио запись</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="СделатьАудиоРасширеннаяПодсказка" id="4"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ФункцииАндроид" id="53">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Функции андроид</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Функции андроид</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ФункцииАндроидРасширеннаяПодсказка" id="54"/>
+					<ChildItems>
+						<Button name="СделатьФотоАндроид" id="55">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Height>2</Height>
+							<CommandName>Form.Command.СделатьФотоАндроид</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<Picture>
+								<xr:Ref>CommonPicture.СделатьФото</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сделать фото</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="СделатьФотоАндроидРасширеннаяПодсказка" id="56"/>
+						</Button>
+						<LabelDecoration name="Декорация2" id="68">
+							<ContextMenu name="Декорация2КонтекстноеМеню" id="69"/>
+							<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="70"/>
+						</LabelDecoration>
+						<InputField name="АндКачествоВидео" id="62">
+							<DataPath>АндКачествоВидео</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Качество видео</v8:content>
+								</v8:item>
+							</Title>
+							<ListChoiceMode>true</ListChoiceMode>
+							<TextEdit>false</TextEdit>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Низкое</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Высокое</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="АндКачествоВидеоКонтекстноеМеню" id="63"/>
+							<ExtendedTooltip name="АндКачествоВидеоРасширеннаяПодсказка" id="64"/>
+						</InputField>
+						<InputField name="АндДлительностьВидео" id="65">
+							<DataPath>АндДлительностьВидео</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Длительность видео (с)</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="АндДлительностьВидеоКонтекстноеМеню" id="66"/>
+							<ExtendedTooltip name="АндДлительностьВидеоРасширеннаяПодсказка" id="67"/>
+						</InputField>
+						<Button name="СделатьВидеоАндроид" id="60">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Height>2</Height>
+							<CommandName>Form.Command.СделатьВидеоАндроид</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<Picture>
+								<xr:Ref>CommonPicture.СделатьВидеоЗапись</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сделать видео</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="СделатьВидеоАндроидРасширеннаяПодсказка" id="61"/>
+						</Button>
+						<LabelDecoration name="Декорация5" id="107">
+							<ContextMenu name="Декорация5КонтекстноеМеню" id="108"/>
+							<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="109"/>
+						</LabelDecoration>
+						<Button name="ОбрезатьФото" id="74">
+							<Type>UsualButton</Type>
+							<Height>2</Height>
+							<CommandName>Form.Command.ОбрезатьФото</CommandName>
+							<Font bold="true" kind="AutoFont"/>
+							<ExtendedTooltip name="ОбрезатьФотоРасширеннаяПодсказка" id="75"/>
+						</Button>
+						<LabelDecoration name="Декорация1" id="57">
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="58"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="59"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="Сохраненные" id="76">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сохраненные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сохраненные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СохраненныеРасширеннаяПодсказка" id="77"/>
+					<ChildItems>
+						<Table name="ДанныеВУстройстве" id="78">
+							<MultipleChoice>true</MultipleChoice>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ДанныеВУстройстве</DataPath>
+							<RowPictureDataPath>ДанныеВУстройстве.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ДанныеВУстройствеКонтекстноеМеню" id="79"/>
+							<AutoCommandBar name="ДанныеВУстройствеКоманднаяПанель" id="80">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ДанныеВУстройствеСоздать" id="119">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Item.ДанныеВУстройстве.StandardCommand.Create</CommandName>
+										<ExtendedTooltip name="ДанныеВУстройствеСоздатьРасширеннаяПодсказка" id="120"/>
+									</Button>
+									<Button name="ДанныеВУстройствеПоказатьМножественноеВыделение" id="121">
+										<Type>CommandBarButton</Type>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Item.ДанныеВУстройстве.StandardCommand.ShowMultipleSelection</CommandName>
+										<ExtendedTooltip name="ДанныеВУстройствеПоказатьМножественноеВыделениеРасширеннаяПодсказка" id="122"/>
+									</Button>
+									<Button name="ДанныеВУстройствеОбновить" id="131">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Item.ДанныеВУстройстве.StandardCommand.Refresh</CommandName>
+										<ExtendedTooltip name="ДанныеВУстройствеОбновитьРасширеннаяПодсказка" id="132"/>
+									</Button>
+									<Button name="ДанныеВУстройствеНайти" id="125">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Item.ДанныеВУстройстве.StandardCommand.Find</CommandName>
+										<ExtendedTooltip name="ДанныеВУстройствеНайтиРасширеннаяПодсказка" id="126"/>
+									</Button>
+									<Button name="ДанныеВУстройствеОтменитьПоиск" id="127">
+										<Type>CommandBarButton</Type>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Item.ДанныеВУстройстве.StandardCommand.CancelSearch</CommandName>
+										<ExtendedTooltip name="ДанныеВУстройствеОтменитьПоискРасширеннаяПодсказка" id="128"/>
+									</Button>
+									<Button name="ДанныеВУстройствеУстановитьИнтервал" id="129">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Item.ДанныеВУстройстве.StandardCommand.SetDateInterval</CommandName>
+										<ExtendedTooltip name="ДанныеВУстройствеУстановитьИнтервалРасширеннаяПодсказка" id="130"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДанныеВУстройствеРасширеннаяПодсказка" id="81"/>
+							<SearchStringAddition name="ДанныеВУстройствеСтрокаПоиска" id="82">
+								<AdditionSource>
+									<Item>ДанныеВУстройстве</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДанныеВУстройствеСтрокаПоискаКонтекстноеМеню" id="83"/>
+								<ExtendedTooltip name="ДанныеВУстройствеСтрокаПоискаРасширеннаяПодсказка" id="84"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДанныеВУстройствеСостояниеПросмотра" id="85">
+								<AdditionSource>
+									<Item>ДанныеВУстройстве</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДанныеВУстройствеСостояниеПросмотраКонтекстноеМеню" id="86"/>
+								<ExtendedTooltip name="ДанныеВУстройствеСостояниеПросмотраРасширеннаяПодсказка" id="87"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДанныеВУстройствеУправлениеПоиском" id="88">
+								<AdditionSource>
+									<Item>ДанныеВУстройстве</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДанныеВУстройствеУправлениеПоискомКонтекстноеМеню" id="89"/>
+								<ExtendedTooltip name="ДанныеВУстройствеУправлениеПоискомРасширеннаяПодсказка" id="90"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<ColumnGroup name="ДанныеВУстройствеГруппа2" id="102">
+									<ExtendedTooltip name="ДанныеВУстройствеГруппа2РасширеннаяПодсказка" id="103"/>
+									<ChildItems>
+										<ColumnGroup name="ДанныеВУстройствеГруппа1" id="100">
+											<Group>InCell</Group>
+											<ExtendedTooltip name="ДанныеВУстройствеГруппа1РасширеннаяПодсказка" id="101"/>
+											<ChildItems>
+												<LabelField name="ДанныеВУстройствеТипДанных" id="116">
+													<DataPath>ДанныеВУстройстве.ТипДанных</DataPath>
+													<ContextMenu name="ДанныеВУстройствеТипДанныхКонтекстноеМеню" id="117"/>
+													<ExtendedTooltip name="ДанныеВУстройствеТипДанныхРасширеннаяПодсказка" id="118"/>
+												</LabelField>
+												<LabelField name="ДанныеВУстройствеРасширениеФайла" id="113">
+													<DataPath>ДанныеВУстройстве.РасширениеФайла</DataPath>
+													<Width>5</Width>
+													<ContextMenu name="ДанныеВУстройствеРасширениеФайлаКонтекстноеМеню" id="114"/>
+													<ExtendedTooltip name="ДанныеВУстройствеРасширениеФайлаРасширеннаяПодсказка" id="115"/>
+												</LabelField>
+												<LabelField name="ДанныеВУстройствеПериод" id="91">
+													<DataPath>ДанныеВУстройстве.Period</DataPath>
+													<Format>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ДФ=ЧЧ:мм</v8:content>
+														</v8:item>
+													</Format>
+													<ContextMenu name="ДанныеВУстройствеПериодКонтекстноеМеню" id="92"/>
+													<ExtendedTooltip name="ДанныеВУстройствеПериодРасширеннаяПодсказка" id="93"/>
+												</LabelField>
+											</ChildItems>
+										</ColumnGroup>
+										<LabelField name="ДанныеВУстройствеКомментарий" id="94">
+											<DataPath>ДанныеВУстройстве.Комментарий</DataPath>
+											<ShowInHeader>false</ShowInHeader>
+											<ContextMenu name="ДанныеВУстройствеКомментарийКонтекстноеМеню" id="95"/>
+											<ExtendedTooltip name="ДанныеВУстройствеКомментарийРасширеннаяПодсказка" id="96"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="РазрешениеФото" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешение фото</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="Монохромное" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Монохромное</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Качество" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Качество</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Камера" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Камера</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="КачествоВидео" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Качество видео</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="АндКачествоВидео" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Анд качество видео</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АндДлительностьВидео" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Анд длительность видео</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьДляСохраненияФайлов" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь для сохранения файлов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДанныеВУстройстве" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные в устройстве</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.ДанныеМультимедиа</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Период</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Период</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>Day</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+					</dcsset:item>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ОткрыватьРезультат" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открывать результат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СделатьФото" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать фото</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать фото</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработкаКоманды</Action>
+		</Command>
+		<Command name="СделатьВидео" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать видео</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать видео</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработкаКоманды</Action>
+		</Command>
+		<Command name="СделатьАудио" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать аудио</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать аудио</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработкаКоманды</Action>
+		</Command>
+		<Command name="ПросканироватьШтрихкод" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просканировать штрихкод</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просканировать штрихкод</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработкаКоманды</Action>
+		</Command>
+		<Command name="СделатьФотоАндроид" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать фото андроид</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать фото андроид</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СделатьФотоАндроид</Action>
+		</Command>
+		<Command name="СделатьВидеоАндроид" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать видео андроид</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать видео андроид</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СделатьВидеоАндроид</Action>
+		</Command>
+		<Command name="СделатьАудиоАндроид" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать аудио андроид</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать аудио андроид</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СделатьАудиоАндроид</Action>
+		</Command>
+		<Command name="ОбрезатьФото" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обрезать фото</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обрезать фото</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ИзменитьРазмер</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбрезатьФото</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>
