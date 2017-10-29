@@ -2,6 +2,7 @@
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.4">
 	<ConfigVersions>
 		<Metadata name="Catalog.Пользователи" id="188f93e2-f1d7-4c73-87df-d4e518985b6e" configVersion="ad2a810d89b11547af01efd3db7fb7cc00000000"/>
+		<Metadata name="Catalog.Справочник1" id="35efa68b-d57f-4776-8970-1d44b66e81d6" configVersion="992370503e844f429e3dc5949e2ee43900000000"/>
 		<Metadata name="Catalog.ТестированиеИнтентов" id="b2433ab6-405c-4998-8208-31eab6a8b6ac" configVersion="8ca7cb796b181942ae39aaedc055a4cf00000000">
 			<Metadata name="Catalog.ТестированиеИнтентов.Attribute.Приложение" id="14d86f33-dd3a-44c3-90ba-0edec56b05a9"/>
 			<Metadata name="Catalog.ТестированиеИнтентов.TabularSection.ДопДанные" id="23d7b4ab-28aa-426c-a077-91ecf5591dfa"/>
@@ -181,7 +182,7 @@
 		<Metadata name="CommonPicture.УстановитьНаклейку.Picture" id="d83865c2-a592-4b30-a030-4bcd34cbc990.0" configVersion="15c0897c90c1dd47a4477884b382ec8d00000000"/>
 		<Metadata name="CommonPicture.ФоновоеЗадание" id="8bcef9de-46ed-4af7-908a-cbe5a1ea538a" configVersion="afe90294d79902448bc1dbbd1541660300000000"/>
 		<Metadata name="CommonPicture.ФоновоеЗадание.Picture" id="8bcef9de-46ed-4af7-908a-cbe5a1ea538a.0" configVersion="0dcf318ca9e2b84da23e56cfb03e0db200000000"/>
-		<Metadata name="Configuration.ТестированиеВозможностей" id="b2ae62f2-ee43-47a6-9db8-d564c3d8ba0d" configVersion="92dae7635593944b8d8418ac0c4f2b7500000000"/>
+		<Metadata name="Configuration.ТестированиеВозможностей" id="b2ae62f2-ee43-47a6-9db8-d564c3d8ba0d" configVersion="8249020ee8ac684eab0fd089ac9a249d00000000"/>
 		<Metadata name="Configuration.ТестированиеВозможностей.HomePageWorkArea" id="9b08c58e-55d1-4b7e-b626-80f6fb2e1f5c.8" configVersion="be1fbb0787b3734fb85e6ff7f68a358e00000000"/>
 		<Metadata name="Configuration.ТестированиеВозможностей.MainSectionCommandInterface" id="9b08c58e-55d1-4b7e-b626-80f6fb2e1f5c.9" configVersion="78c50e3f0be4d8438b5603982220f60500000000"/>
 		<Metadata name="Configuration.ТестированиеВозможностей.ManagedApplicationModule" id="9b08c58e-55d1-4b7e-b626-80f6fb2e1f5c.6" configVersion="9968e221f907e34ea4daec7abfbc588e00000000"/>
