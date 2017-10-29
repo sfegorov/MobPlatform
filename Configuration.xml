@@ -218,7 +218,6 @@
 			<CommonForm>httpСервисы</CommonForm>
 			<Catalog>Пользователи</Catalog>
 			<Catalog>ТестированиеИнтентов</Catalog>
-			<Catalog>Справочник1</Catalog>
 			<Document>ПоступлениеТоваров</Document>
 			<Enum>СоставКонтактов</Enum>
 			<Enum>ТипХранимыхДанных</Enum>
